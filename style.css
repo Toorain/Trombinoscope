@@ -10,6 +10,8 @@
 .round-portrait
 {
 	border-radius: 100px;
+	height: 180px;
+	width: 180px;
 }
 
 .round-portrait:hover
@@ -48,7 +50,8 @@
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;  
+  width: 90%;
+  height: 150px;  
   max-width: 1200px;
 }
 
@@ -82,6 +85,12 @@ position: relative;
 
 .mySlides {
   display: none;  
+}
+
+.mySlides img
+{
+	height: 350px;
+	width: 350px;
 }
 
 .cursor {
@@ -159,4 +168,9 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.quote
+{
+	height: 100%;
 }
