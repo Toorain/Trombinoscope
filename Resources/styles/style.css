@@ -8,6 +8,62 @@
 
 }
 
+/* #region Avatar card*/
+
+@keyframes img-zoom{
+  from {transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+.img-container{
+  display:inline-flex;
+  flex-wrap: wrap;
+  animation-name: img-zoom;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+.avatar-container{    
+  float: left;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  position:relative; 
+  overflow:hidden;
+  margin: 20px 30px;
+  transition: transform .2s;
+}
+.overlay {
+  position: absolute;
+  top:0;
+  height:100%;
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+  background-color: rgba(250, 170, 170, 0.5)
+}
+.img-text{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.5rem;
+}
+.avatar-container:hover,
+.avatar-container:hover .overlay{
+  transform: scale(1.5) rotateY(360deg);
+  display:block;
+}
+
+/* #endregion Avatar card */
+
+
+
+
+
+
+
+
 /*-------------------HEADER--------------------------*/
 .main-content
 {
@@ -19,22 +75,20 @@
 
 .round-portrait
 {
-	border-radius: 100px;
-	height: 180px;
-	width: 180px;
+  width: inherit;
+  opacity: 1;
 }
 
-.round-portrait:hover
-{
-	opacity: 0.7;
-}
 
 .line
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	justify-content: space-around;
+
+  
+  display:inline-flex;
+  flex-wrap: wrap;
+  animation-name: img-zoom;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 
 }
 /*--------------------BODY---------------------------*/
