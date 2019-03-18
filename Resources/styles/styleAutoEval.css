@@ -22,6 +22,8 @@ h1 {
 	box-shadow: 0 4px 8px 0 rgba (0,0,0,0.2), 0 6px 20px 0  rgba (0,0,0,0.19);
 }
 */
+
+
 #je-mauto-evalue{
 	font-family: Arial, sans-serif;
 	font-size: 2em;
@@ -56,12 +58,14 @@ h1 {
 	color: #696969;
 }
 
+.btnValid{
+	margin: 25px 0;
+	text-align: center;
+}
+
 #valider {
 	border-radius: 50px;
 	padding: 10px 20px;
-	margin:25px 10px;
-	position: absolute;
-	left:45%;
 	font-family: Arial, sans-serif;
 }
 

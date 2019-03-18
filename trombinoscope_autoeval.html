@@ -1,16 +1,42 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Trombinoscope</title>
-        <link rel="stylesheet" type="text/css" href="Resources/styleAutoEval.css">
-        <link rel="author" href="humans.txt">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trombinoscope</title>
+	<link rel="stylesheet" type="text/css" href="Resources/styles/styleAutoEval.css">
+    <link rel="stylesheet" href="Resources/styles/style2.css">
+    <link rel="stylesheet" href="Resources/fonts/Quicksand/stylesheet.css">
+    <link rel="stylesheet" href="Resources/styles/headerTrombinoscope.css">
+	<link rel="author" href="humans.txt">
+</head>
+<body>
+	<!-- #region Header-->
+	<section>
+		<header>
+			<article class="bann">
+				<img src="Resources/pic/logo/hour-of-code-logo.png" alt="logo en attendant un True logo" id="logo">
+				<div id="titre">
+					<h3 id="titreHeader">Formation Développeur(se) Web et Mobile</h3>
+					<h4 id="titreOnglet">Trombinoscope</h4>
+				</div>
+			</article>
+			<nav class=navbar>
+				<ul>
+					<li><a class=about href="#">About</a></li>
+					<li><a id="trombinoscope" href="#">Trombinoscope</a></li>
+					<li><a href="trombinoscope_autoeval.html">Auto-Evaluation</a></li>
+					<li><a href="#">Vie scolaire</a></li>
+				</ul>
+			</nav>
+		</header>
+	</section>	
+	<!-- #endregion Header-->
 
-    </head>
-    <body>
-    <!--
+	<!-- #region Tableau-->
+
+	<!--
         <h1 class="font-family-sserif">Trombinoscope</h1>
         <p class="font-family-sserif">20 développeurs en herbe :</p>
         	<img class="photo" src="https://images.pexels.com/photos/1627936/pexels-photo-1627936.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Profil 1"/>
@@ -20,113 +46,152 @@
         <img class="photo" src="https://images.pexels.com/photos/1892511/pexels-photo-1892511.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Profil 3"/>
 
         <img class="photo"src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Profil 4"/>
-    -->
-     <div id="tableau-entier">
-     	<table cellspacing="10">
-     	<caption id="je-mauto-evalue">Je m'auto-évalue !</caption>
-     	<tbody>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Maquetter une application</td>
-     			<!--<td id="colonne-vide">A</td>-->
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval" >Réaliser une interface utilisateur web statique et adaptable</td>
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Développer une interface utilisateur web dynamique</td>
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Réaliser une interface utilisateur avec une solution de gestion de contenu ou e-commerce</td>
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Créer une base de données</td>
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Développer des composants d'accès aux données</td>
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Développer la partie back-end d'une application web ou web mobile</td>
-     			<td class="int-tableau-auto-eval">
-     			<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     		<tr>
-     			<td class="int-tableau-auto-eval">Elaborer et mettre en oeuvre les composants dans une application de gestion de contenu ou e-commerce</td>
-     			<td class="int-tableau-auto-eval">
-     				<select class="options-niveau">
-     					<option>--Quel est mon niveau ?--</option>
-     					<option>Je suis né(e) pour ça !</option>
-     					<option>Je comprends presque tout !</option>
-     					<option>C'est pas évident...</option>
-     					<option>Complètement sous l'eau !</option>
-     				</select>
-     			</td>
-     		</tr>
-     	</tbody>
-     	</table>   
- 	</div>
+	-->
+	
+	<div id="tableau-entier">
+		<table cellspacing="10">
+			<caption id="je-mauto-evalue">Je m'auto-évalue !</caption>
+			<tbody>
+				<tr>
+					<td class="int-tableau-auto-eval">Maquetter une application</td>
+					<!--<td id="colonne-vide">A</td>-->
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Réaliser une interface utilisateur web statique et adaptable</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Développer une interface utilisateur web dynamique</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Réaliser une interface utilisateur avec une solution de gestion de
+						contenu ou e-commerce</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Créer une base de données</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Développer des composants d'accès aux données</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Développer la partie back-end d'une application web ou web mobile
+					</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="int-tableau-auto-eval">Elaborer et mettre en oeuvre les composants dans une application
+						de gestion de contenu ou e-commerce</td>
+					<td class="int-tableau-auto-eval">
+						<select class="options-niveau">
+							<option>--Quel est mon niveau ?--</option>
+							<option>Je suis né(e) pour ça !</option>
+							<option>Je comprends presque tout !</option>
+							<option>C'est pas évident...</option>
+							<option>Complètement sous l'eau !</option>
+						</select>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="btnValid">
+		<input id="valider" type="button" value="Valider">
+	</div>
+	<!-- #endregion Tableau-->
 
-     <input id="valider" type="button" value="Valider">
-
-    </body>
+    <!-- #region footer -->
+    <footer class="container-footer">
+			<a target="_blank" href="https://www.ics-formation.fr/">
+				<img src="https://www.ics-formation.fr/wp-content/uploads/2017/07/logo_contact.png" alt="logo">
+			</a>
+			<div class="adress">
+				<h5>Adresse :</h5>
+				<a target="_blank"
+					href="https://www.google.com/maps/place/63+Avenue+Simone+Veil,+06200+Nice/@43.6833959,7.2003309,17z/data=!3m1!4b1!4m5!3m4!1s0x12cdd1a187edb0a9:0x8f50f4c68a7cbe25!8m2!3d43.6833959!4d7.2025196">
+					<p>63 avenue Simone Veil <br>
+						06200 NICE</p>
+				</a>
+			</div>
+	
+			<div class="vertical-line"></div>
+	
+			<div class="phone">
+				<h5>Téléphone :</h5>
+				<p>04 93 13 74 51</p>
+			</div>
+			<div class="vertical-line"></div>
+	
+			<div class="mail">
+				<h5>Mail :</h5>
+				<a target="_blank" href="https://www.ics-formation.fr/contact/">
+					<p>icsformations@cote-azur.cci.fr</p>
+			</div>
+		</footer>
+		<span class="copyright">
+			<p>&copy;Copyright 2019 | ICS Formation |</p>
+		</span>
+		<!-- #endregion footer -->
+		
+</body>
 </html>
