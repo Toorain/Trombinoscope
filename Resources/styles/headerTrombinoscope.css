@@ -91,10 +91,13 @@ to {
     border-radius:10px 0px 0px 10px;
   }
 
-#trombinoscope {
+
+.active{
+    
     background-color:rgb(223, 143, 68);
     color: whitesmoke;
 }
+
 .navbar li a {
     display: inline-block;
     /*border-radius:10px;*/
