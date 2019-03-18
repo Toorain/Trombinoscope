@@ -121,6 +121,12 @@ li a:hover:not(.about):not(.active){
     animation-duration: 1s;
     animation-iteration-count: 1;
   }
+
+  .trombinoscope-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
   .avatar-container{    
     float: left;
     width:150px;
