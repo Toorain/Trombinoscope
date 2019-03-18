@@ -100,6 +100,10 @@
 /*------------------FOOTER---------------------------*/
 /* The Modal (background) */
 
+body{
+  margin: 0;
+}
+
 .modal {
   display: none;
   position: fixed;
