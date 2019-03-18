@@ -50,3 +50,10 @@ span.copyright{
     text-align:center;  
     font-size: 11px;
 }
+
+.linkColor{
+    color: lightskyblue;
+}
+.linkColor:visited{
+    color: #3087a4;
+}
