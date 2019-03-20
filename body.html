@@ -1,16 +1,13 @@
 ﻿<!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trombinoscope</title>
-    <link rel="stylesheet" href="Resources/fonts/Quicksand/stylesheet.css">
-    <link rel="stylesheet" href="Resources/fonts/great_vibes/stylesheet.css">
-    <link rel="stylesheet" href="Resources/styles/StyleMain.css">
-    <link rel="stylesheet" href="Resources/styles/style.css">
+    <link rel="stylesheet" href="Resources/styles/styleFonts.css">
+    <link rel="stylesheet" href="Resources/styles/styleMain.css">
+    <link rel="stylesheet" href="Resources/styles/responsive.css">
 </head>
-
 <body>
     <!-- #region Header-->
     <section class="header">
@@ -33,11 +30,11 @@
         </header>
     </section>
     <!-- #endregion Header-->
-    
+
     <!-- #region Trombinoscope -->
     <div class="main-content">
         <div id="background-blur">
-            <div class="line">
+            <div class="trombinoscope-container">
                 <div class="avatar-container">
                     <img src="Resources/pic/square/MAD_4293-2.jpg" alt="" class="round-portrait">
                     <div class="overlay" onclick="openModal();currentSlide(1)">
@@ -62,8 +59,8 @@
                         <span class="img-text">Anthony <br>BIZIEN SALAUN</span>
                     </div>
                 </div>
-            </div>
-            <div class="line">
+
+
                 <div class="avatar-container">
                     <img src="Resources/pic/square/MAD_4288-2.jpg" alt="" class="round-portrait">
                     <div class="overlay" onclick="openModal();currentSlide(5)">
@@ -88,8 +85,8 @@
                         <span class="img-text">Dimitri GAILLOT</span>
                     </div>
                 </div>
-            </div>
-            <div class="line">
+
+
                 <div class="avatar-container">
                     <img src="Resources/pic/square/MAD_4314-2.jpg" alt="" class="round-portrait">
                     <div class="overlay" onclick="openModal();currentSlide(9)">
@@ -114,8 +111,8 @@
                         <span class="img-text">Magali MARTIN</span>
                     </div>
                 </div>
-            </div>
-            <div class="line">
+
+
                 <div class="avatar-container">
                     <img src="Resources/pic/square/MAD_4291-2.jpg" alt="" class="round-portrait">
                     <div class="overlay" onclick="openModal();currentSlide(13)">
@@ -140,8 +137,8 @@
                         <span class="img-text">Radhwa MARZOUK</span>
                     </div>
                 </div>
-            </div>
-            <div class="line">
+
+
                 <div class="avatar-container">
                     <img src="Resources/pic/square/MAD_4305-2.jpg" alt="" class="round-portrait">
                     <div class="overlay" onclick="openModal();currentSlide(17)">
@@ -186,7 +183,8 @@
                     <img src="Resources/pic/square/MAD_4324.jpg">
                     <div class="information">
                         <h1>Alexis-Mathieu HUBERT</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"We are what we repeatedly do. Excellence, then, is not an act, but a habit"
+                        </h4>
                     </div>
                 </div>
 
@@ -205,7 +203,7 @@
                     <img src="Resources/pic/square/MAD_4296.jpg">
                     <div class="information">
                         <h1>Anthony BIZIEN SALAUN</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote"> "Never have more children than you have car windows."</h4>
                     </div>
                 </div>
 
@@ -241,7 +239,7 @@
                     <img src="Resources/pic/square/MAD_4310.jpg">
                     <div class="information">
                         <h1>Dimitri GAILLOT</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"Après réflexion, je n'aurais pas dû installer ubuntu sur la trottinette"</h4>
                     </div>
                 </div>
                 <div class="mySlides">
@@ -276,7 +274,7 @@
                     <img src="Resources/pic/square/MAD_4300.jpg">
                     <div class="information">
                         <h1>Magali MARTIN</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"En route pour l'aventure."</h4>
                     </div>
                 </div>
                 <div class="mySlides">
@@ -293,8 +291,7 @@
                     <img src="Resources/pic/square/MAD_4338.jpg">
                     <div class="information">
                         <h1>Marie-Amandine DELALONDRE</h1>
-                        <h4 class="quote">"Qui s'endort avec le cul qui gratte, se réveille avec le doigts qui pue."
-                        </h4>
+                        <h4 class="quote">"Mieux vaut avoir la folie des grandeurs que le goût de la médiocrité"</h4>
                     </div>
                 </div>
 
@@ -347,7 +344,8 @@
                     <img src="Resources/pic/square/MAD_4344.jpg">
                     <div class="information">
                         <h1>Younes TEMAR</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"Lorsque l'on se cogne la tête contre un pot et que cela sonne creux, ça n'est
+                            pas forcément le pot qui est vide."</h4>
                     </div>
                 </div>
 
@@ -359,13 +357,15 @@
     <!-- #endregion Trombinoscope -->
 
     <!-- #region footer -->
+
     <footer class="container-footer">
         <a target="_blank" href="https://www.ics-formation.fr/">
-            <img src="https://www.ics-formation.fr/wp-content/uploads/2017/07/logo_contact.png" alt="logo" class="logo">
+            <img src="Resources/pic/logo/logo-ics.png" alt="logo">
         </a>
-        <div class="adress">
+
+        <div class="address">
             <h5>Adresse :</h5>
-            <a class="linkColor" target="_blank"
+            <a target="_blank"
                 href="https://www.google.com/maps/place/63+Avenue+Simone+Veil,+06200+Nice/@43.6833959,7.2003309,17z/data=!3m1!4b1!4m5!3m4!1s0x12cdd1a187edb0a9:0x8f50f4c68a7cbe25!8m2!3d43.6833959!4d7.2025196">
                 <p>63 avenue Simone Veil <br>
                     06200 NICE</p>
@@ -378,12 +378,12 @@
             <h5>Téléphone :</h5>
             <p>04 93 13 74 51</p>
         </div>
-        
+
         <div class="vertical-line"></div>
 
         <div class="mail">
             <h5>Mail :</h5>
-            <a class="linkColor" target="_blank" href="https://www.ics-formation.fr/contact/">
+            <a target="_blank" href="https://www.ics-formation.fr/contact/">
                 <p>icsformations@cote-azur.cci.fr</p>
             </a>
         </div>
@@ -392,7 +392,7 @@
         <span>&copy;Copyright 2019 | ICS Formation |</span>
     </div>
     <!-- #endregion footer -->
-    
+
     <script>
         function openModal() {
             document.getElementById('myModal').style.display = "block";

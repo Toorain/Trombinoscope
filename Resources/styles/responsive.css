@@ -1,0 +1,52 @@
+@media only screen 
+and (min-device-width : 767px) 
+and (max-device-width : 1024px)  
+{
+	section
+	{
+		padding: 0;
+	}	
+
+	.main-content
+	{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.line
+	{
+		display: flex;
+	}
+
+	.modal
+	{
+		padding-top: 150px;
+	}
+
+	.close
+	{
+		right: 65px;
+		top: 40px;
+	}	
+}
+
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 768px) 
+{
+	.main-content
+	{
+		width: 420px;
+	}
+
+	#titre
+	{
+		right: 0px;
+	}
+
+	.close
+	{
+		top: 80px;
+	}	
+}
