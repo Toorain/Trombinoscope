@@ -11,7 +11,7 @@ section{
     justify-content: center;
     padding:10px;
     font-family: 'Quicksand';
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 header {
     width:80%;
@@ -114,6 +114,7 @@ li a:hover:not(.about) {
   
   #remi
   {
+    display: inline-flex;
     width: 200px;
     height: 200px;
     animation-name: img-zoom;
@@ -123,6 +124,7 @@ li a:hover:not(.about) {
 
   .img-container{
     display: inline-flex;
+    justify-content: center;
     flex-wrap: wrap;
     animation-name: img-zoom;
     animation-duration: 1s;
