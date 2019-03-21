@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Resources/styles/styleFonts.css">
     <link rel="stylesheet" href="Resources/styles/styleMain.css">
     <link rel="stylesheet" href="Resources/styles/responsive.css">
+    <script src="Resources/scripts/konami-js.js"></script>
+    <script src="Resources/scripts/barrelRoll.js"></script>
 </head>
 <body>
     <!-- #region Header-->
@@ -34,7 +36,13 @@
     <!-- #region Trombinoscope -->
     <div class="main-content">
         <div id="background-blur">
-            <div class="trombinoscope-container">
+            <div class="avatar-container" id="remi">
+                <img src="Resources/pic/square/remy-2.jpg" alt="" class="round-portrait">
+                <div class="overlay" onclick="openModal();currentSlide(21)">
+                    <span class="img-text">Rémi LANNEYRE<br>A.k.a Wolf<br>A.k.a Le Soleil</span>
+                </div>
+            </div> 
+            <div class="img-container">
                 <div class="avatar-container">
                     <img src="Resources/pic/square/MAD_4293-2.jpg" alt="" class="round-portrait">
                     <div class="overlay" onclick="openModal();currentSlide(1)">
@@ -212,7 +220,7 @@
                     <img src="Resources/pic/square/MAD_4288.jpg">
                     <div class="information">
                         <h1>Antoine GUYADER</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"Le gras c'est la vie !"</h4>
                     </div>
                 </div>
 
@@ -247,7 +255,7 @@
                     <img src="Resources/pic/square/MAD_4314.jpg">
                     <div class="information">
                         <h1>Isabelle DE LATOUR</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"Keep it simple."</h4>
                     </div>
                 </div>
 
@@ -309,7 +317,9 @@
                     <img src="Resources/pic/square/MAD_4303.jpg">
                     <div class="information">
                         <h1>Radhwa MARZOUK</h1>
-                        <h4 class="quote"></h4>
+                        <h4 class="quote">"Les performances individuelles, ce n'est pas le plus important. On gagne et
+                            on perd en
+                            équipe."</h4>
                     </div>
                 </div>
                 <div class="mySlides">
@@ -345,7 +355,17 @@
                     <div class="information">
                         <h1>Younes TEMAR</h1>
                         <h4 class="quote">"Lorsque l'on se cogne la tête contre un pot et que cela sonne creux, ça n'est
-                            pas forcément le pot qui est vide."</h4>
+                            pas forcément
+                            le pot qui est vide."</h4>
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">21 / 21</div>
+                    <img src="Resources/pic/square/remy-1.jpg">
+                    <div class="information">
+                        <h1>Rémi LANNEYRE</h1>
+                        <h4 class="quote"></h4>
                     </div>
                 </div>
 
@@ -395,14 +415,17 @@
     <!-- #endregion footer -->
 
     <script>
+        var isModal = false;
         function openModal() {
             document.getElementById('myModal').style.display = "block";
             document.getElementById('background-blur').style.filter = "blur(10px)";
+            isModal = true;
         }
 
         function closeModal() {
             document.getElementById('myModal').style.display = "none";
             document.getElementById('background-blur').style.filter = "none";
+            isModal = false;
         }
 
         var slideIndex = 1;
@@ -433,6 +456,28 @@
             // dots[slideIndex-1].className += " active";
             // captionText.innerHTML = dots[slideIndex-1].alt;
         }
+
+        document.onkeydown = checkKey;
+
+        function checkKey(e) {
+            e = e || window.event;
+            if(isModal){                
+                if (e.keyCode == '37') {
+                    // left arrow
+                    plusSlides(-1);
+                }
+                else if (e.keyCode == '39') {
+                    // right arrow
+                    plusSlides(1);
+                } 
+            }
+        }
+
+
+        var easter_egg = new Konami(function() { 
+            //alert('Konami code!'); //remplacez par votre code
+            doBarrelRoll();
+        });
     </script>
 </body>
 </html>

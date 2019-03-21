@@ -15,7 +15,6 @@ section{
 header {
     width:80%;
     text-align: center;
-    background-color: rgba(252, 252, 252, 0.555);
     border-radius:15px;
 }
 
@@ -104,7 +103,7 @@ li a:hover:not(.about) {
 
 /* #endregion Header*/
 
-/*  #region Body */
+/* #region Body */
 
 /* #region Avatar card*/
 
@@ -113,7 +112,16 @@ li a:hover:not(.about) {
     to{transform: scale(1);}
   }
   
-  .trombinoscope-container{
+  #remi
+  {
+    width: 200px;
+    height: 200px;
+    animation-name: img-zoom;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  .img-container{
     display: inline-flex;
     flex-wrap: wrap;
     animation-name: img-zoom;
@@ -162,6 +170,12 @@ li a:hover:not(.about) {
   /* #endregion Avatar card */
   
   /*-------------------HEADER--------------------------*/
+  #background-blur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
   .main-content
   {
       justify-content: space-around;
