@@ -145,13 +145,40 @@
 	</div>
 
 	<div id="resultImage">
-
+		<div id="score1" class="score hidden">
+			<img src="Resources/pic/imgAutoEval/step1.jpg" alt="Score entre 0 et 37,5">
+			<div class="scoreText">
+				<p>"Beaucoup encore il te reste à apprendre, que la force soit avec toi"</p>
+			</div>
+		</div>
+		<div id="score2" class="score hidden">
+			<img src="Resources/pic/imgAutoEval/step2.jpg" alt="Score entre 37,5 et 62,5">
+			<div class="scoreText">
+				<p>"Libérer ton  esprit tu dois, Toujours par 2 ils vont, ni plus ni moins le maître et son apprenti"</p>
+			</div>
+		</div>
+		<div id="score3" class="score hidden">
+			<img src="Resources/pic/imgAutoEval/step3.jpg" alt="Score entre 62,5 et 87,5">
+			<div class="scoreText">
+				<p>"Bonne relation avec le code, tu entretiens. Un jour Jedi tu deviendras"</p>
+			</div>
+		</div>
+		<div id="score4" class="score hidden">
+			<img src="Resources/pic/imgAutoEval/step4.jpg" alt="Score entre 87,5 et 100">
+			<div class="scoreText">
+				<p>"Padawan tu étais, maître Jedi maintenant tu es"</p>
+			</div>
+		</div>
 	</div>
 	<!-- #endregion Tableau-->
 
 	<!-- #region footer -->
 
-    <a href="#header" class="topPage">haut de page</a>
+    <div class="topPage">
+		<a href="#header">
+			<img src="Resources/pic/logo/arrow.png" alt="arrow" height="25px" class="topPageImg">
+		</a>
+	</div>
 	<footer class="container-footer">
 		<a target="_blank" href="https://www.ics-formation.fr/">
 			<img src="Resources/pic/logo/logo-ics.png" alt="logo">
@@ -188,10 +215,18 @@
 	<!-- #endregion footer -->
 
 	<script>
+		function resetImage(){
+			document.getElementById("score1").className = "score hidden";
+			document.getElementById("score2").className = "score hidden";
+			document.getElementById("score3").className = "score hidden";
+			document.getElementById("score4").className = "score hidden";
+		}
+
 		function result(){
 			var isCorrect = true;
 			var resultat = 0;
 			var selects = document.querySelectorAll("select.options-niveau");
+			resetImage();
 
 			for(i=0, l=selects.length; i<l; i++){
 				if(selects[i].value === "25"){
@@ -213,7 +248,18 @@
 			}
 			if(isCorrect){
 				var average = resultat / 8;
-				document.getElementById("resultImage").innerText = average.toFixed(2);
+				if(average <= 37.5){
+					document.getElementById("score1").classList.toggle("hidden");
+				}
+				else if (average > 37.5 && average <= 62.5){					
+					document.getElementById("score2").classList.toggle("hidden");
+				}
+				else if (average > 62.5 && average <= 87.5){
+					document.getElementById("score3").classList.toggle("hidden");
+				}
+				else if (average > 87.5){
+					document.getElementById("score4").classList.toggle("hidden");
+				}
 			}
 		};
 	</script>
