@@ -131,12 +131,10 @@ li a:hover:not(.about) {
     animation-iteration-count: 1;
   }
 
-  .avatar-container{    
-    float: left;
+  .avatar-container{
     width:150px;
     height:150px;
     border-radius:50%;
-    position:relative; 
     overflow:hidden;
     margin: 20px 30px;
     transition: transform .2s;
@@ -181,7 +179,6 @@ li a:hover:not(.about) {
   
   .main-content
   {
-      justify-content: space-around;
       width: 65%;
       margin: auto;	
   }
