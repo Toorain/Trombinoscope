@@ -1,6 +1,7 @@
 body{
-    margin: 0;
-    background: linear-gradient(135deg, rgba(242,242,242,1) 0%, rgba(235,235,235,1) 46%, rgba(224,224,224,1) 56%, rgba(255,255,255,1) 100%);;
+  font-family: Roboto Bk;
+  margin: 0;
+  background: linear-gradient(135deg, rgba(242,242,242,1) 0%, rgba(235,235,235,1) 46%, rgba(224,224,224,1) 56%, rgba(255,255,255,1) 100%);;
 }
 
 /* #region Header */
@@ -10,7 +11,7 @@ section{
     justify-content: center;
     padding:10px;
     font-family: 'Quicksand';
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 header {
     width:80%;
@@ -40,11 +41,11 @@ header {
 
 @keyframes mymove {
     from {
-        top:100px;
+        margin-top: 100px;
         opacity: 0 ;
     }
     to {
-        top:20px;
+        margin-top: 20px;
         opacity: 1;
     }
 }
@@ -52,7 +53,6 @@ header {
     border-radius:15px;
     background-color: #9EE6AA;
     height:45px;
-    position: relative;
     animation-name: mymove;
     animation-duration: 3s;
     animation-iteration-count: 0.5;
@@ -149,6 +149,7 @@ li a:hover:not(.about) {
     background-color: rgba(250, 170, 170, 0.5)
   }
   .img-text{
+    font-family: Roboto Lt;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -359,13 +360,20 @@ li a:hover:not(.about) {
 /* #region Footer  */
 
 .topPage{
-  float: right;
+  justify-content: flex-end;
+  display: flex;
+  margin: 5px 0;
+}
+.topPageImg{
+  margin-right: 10px;
+  padding: 0;
+  width: 25px;
 }
 
 .container-footer{
     font-family: Roboto Lt;
     font-size: 15px;
-    margin-top: 25px;
+    margin-top: 30px;
     position: relative;
     background-color:#08596A;
     display: flex;

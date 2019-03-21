@@ -1,5 +1,5 @@
 #je-mauto-evalue{
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto Bk', sans-serif;
 	font-size: 2em;
 	font-weight: bold;
 	margin: 30px;
@@ -16,14 +16,14 @@
 	padding: 10px 20px;
 	border-spacing: 30px 10px;
 	margin: 10px;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto Lt', sans-serif;
 	text-align: center;
 }
 
 .options-niveau {
 	background: none;
 	border: none;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto Lt', sans-serif;
 	font-size: 1em;
 }
 
@@ -39,10 +39,21 @@
 #valider {
 	border-radius: 50px;
 	padding: 10px 20px;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto Bk', sans-serif;
 }
 
 #valider:hover {
 	background-color: #696969;
 	color:white;
+}
+
+#resultImage{
+	text-align: center;
+	margin: 15px 0;
+}
+.score{
+	margin: auto;
+}
+.hidden{
+	display: none;
 }
