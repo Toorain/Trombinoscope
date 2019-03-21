@@ -215,18 +215,21 @@
 	<!-- #endregion footer -->
 
 	<script>
-		function resetImage(){
-			document.getElementById("score1").className = "score hidden";
-			document.getElementById("score2").className = "score hidden";
-			document.getElementById("score3").className = "score hidden";
-			document.getElementById("score4").className = "score hidden";
+		function resetImage(selects, image){
+			for (var l = 0; l < image.length; l++) {
+				image[l].className = "score hidden";
+			}
+			for (var i = 0; i < selects.length; i++) {
+				selects[i].parentElement.style.border = "none";				
+			}
 		}
 
 		function result(){
 			var isCorrect = true;
 			var resultat = 0;
+			var image = document.querySelectorAll("div.score");
 			var selects = document.querySelectorAll("select.options-niveau");
-			resetImage();
+			resetImage(selects, image);
 
 			for(i=0, l=selects.length; i<l; i++){
 				if(selects[i].value === "25"){
@@ -244,21 +247,22 @@
 				if(selects[i].value === "0"){
 					isCorrect = false;
 					document.getElementById("resultImage").innerText = "";
+					selects[i].parentElement.style.border = "2px solid red";
 				}
 			}
 			if(isCorrect){
 				var average = resultat / 8;
 				if(average <= 37.5){
-					document.getElementById("score1").classList.toggle("hidden");
+					image[0].classList.toggle("hidden");
 				}
 				else if (average > 37.5 && average <= 62.5){					
-					document.getElementById("score2").classList.toggle("hidden");
+					image[1].classList.toggle("hidden");
 				}
 				else if (average > 62.5 && average <= 87.5){
-					document.getElementById("score3").classList.toggle("hidden");
+					image[2].classList.toggle("hidden");
 				}
 				else if (average > 87.5){
-					document.getElementById("score4").classList.toggle("hidden");
+					image[3].classList.toggle("hidden");
 				}
 			}
 		};
